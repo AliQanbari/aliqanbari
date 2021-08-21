@@ -1,16 +1,18 @@
 import React from "react";
-import { AppBar, AppBarMenuItem, SmallVerticalDivider } from "aq_components";
+import AppBar from "./aq_components/app_bar";
+import AppBarMenuItem from "./aq_components/app_bar_menu_item";
+import SmallVerticalDivider from "./aq_components/divider_vertical_small";
 
 export default function TopSection(){
     return (
         <div className="bg-qpink">
         <section title="about me" className="container mx-auto py-8">
             <AppBar title={'Ali Qanbari'} actions={<>
-                <AppBarMenuItem name="Blog"/>
-                <AppBarMenuItem name="Projects"/>
-                <AppBarMenuItem name="Presentations"/>
+                <AppBarMenuItem><a>Blog</a></AppBarMenuItem>
+                <AppBarMenuItem><a>Projects</a></AppBarMenuItem>
+                <AppBarMenuItem><a>Presentations</a></AppBarMenuItem>
                 <SmallVerticalDivider />
-                <AppBarMenuItem name="Download CV"/>
+                <AppBarMenuItem><a>Download CV</a></AppBarMenuItem>
             </>} />
             <div className="flex flex-col lg:flex-row lg:space-x-32 xl:space-x-64 mt-16 lg:mt-24 mb-24">
                 <div className="flex flex-col self-center">
