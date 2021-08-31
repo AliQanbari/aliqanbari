@@ -1,16 +1,30 @@
-import Head from 'next/head'
-import Image from 'next/image'
 import React from 'react';
 import SkillBar from '../components/skill';
 import TopSection from '../components/top';
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  return (
-    <div className="">
+  return <>
       <TopSection />
-      <SkillBar name="Flutter" value={100} />
-      <SkillBar name="React" value={30} />
-    </div>
-  );
+      <div className="container">
+        <h2 className="text-3xl font-bold text-center mt-6">Skills</h2>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4">
+          <div className="flex flex-col items-center gap-3">
+            <h3 className="text-xl font-bold mt-4">Frameworks</h3>
+            <SkillBar name="Flutter" value={98} />
+            <SkillBar name=".Net Core" value={80} />
+            <SkillBar name="React" value={60} />
+            <SkillBar name="Native Android" value={50} />
+            <SkillBar name="Unity" value={50} />
+          </div>
+          <div className="flex flex-col items-center gap-3">
+            <h3 className="text-xl font-bold mt-4">Languages</h3>
+            <SkillBar name="Dart" value={99} />
+            <SkillBar name="Java" value={96} />
+            <SkillBar name="Kotlin" value={85} />
+            <SkillBar name="C#" value={80} />
+            <SkillBar name="HTML/CSS/JavaScript" value={75} />
+          </div>
+        </div>
+      </div>
+    </>;
 }
