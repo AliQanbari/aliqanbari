@@ -5,8 +5,9 @@ module.exports = {
     extend: {
       backgroundColor: theme => ({
         ...theme('colors'),
-        'qpink' : '#FFF2FF',
-        'q-btn-purple': '#6A61F1',
+        'q-pink' : '#FFF2FF',
+        'q-purple': '#6A61F1',
+        'q-purple-light' : '#9996EF',
        }),
       width: {
         '128': '32rem',

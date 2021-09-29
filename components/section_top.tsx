@@ -5,7 +5,7 @@ import SmallVerticalDivider from "./aq_components/divider_vertical_small";
 
 export default function TopSection(){
     return (
-        <div className="bg-qpink">
+        <div className="bg-q-pink">
         <section title="about me" className="container mx-auto py-8">
             <AppBar title={'Ali Qanbari'} actions={<>
                 <AppBarMenuItem><a>Blog</a></AppBarMenuItem>
@@ -26,7 +26,7 @@ export default function TopSection(){
                             </svg>Iran, Bushehr, Bushehr
                         </div>
                     <p className="text-xl xl:text-2xl leading-9 xl:leading-10 w-128 lg:px-0">I'm a 20 year old Software Engneering Student from Iran Spacilazing in Mobile App Development &amp; Software Solution Design.</p>
-                    <button className="bg-q-btn-purple shadow-md rounded-md text-white px-8 py-3 text-lg font-bold mt-4 self-center lg:self-start hover:shadow-lg hover:bg-opacity-85">Contact Me</button>
+                    <button className="bg-q-purple shadow-md rounded-md text-white px-8 py-3 text-lg font-bold mt-4 self-center lg:self-start hover:shadow-lg hover:bg-opacity-85">Contact Me</button>
                 </div>
             </div>
         </section>
