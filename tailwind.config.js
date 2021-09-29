@@ -8,14 +8,24 @@ module.exports = {
         'q-pink' : '#FFF2FF',
         'q-purple': '#6A61F1',
         'q-purple-light' : '#9996EF',
+        'q-purple-dark'  : '#302E4F',
+       }),
+       textColor: theme => ({
+        ...theme('colors'),
+        'q-pink' : '#FFF2FF',
+        'q-purple': '#6A61F1',
+        'q-purple-muted' : '#5F5E90',
+        'q-purple-light' : '#BEBCF8',
        }),
       width: {
         '128': '32rem',
-      }
+        '88': '22rem',
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+    },
   },
   plugins: [],
 }
