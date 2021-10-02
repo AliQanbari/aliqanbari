@@ -9,7 +9,7 @@ export default function TopSection(){
     return (
         <div className="bg-q-pink">
         <section title="about me" className="container mx-auto py-8">
-            <AppBar title={'Ali Qanbari'} actions={<>
+            <AppBar title={'Ali Qanbari'} menuColor="#2E3A59" actions={<>
                 <AppBarMenuItem><a>Blog</a></AppBarMenuItem>
                 <AppBarMenuItem><a>Projects</a></AppBarMenuItem>
                 <AppBarMenuItem><a>Presentations</a></AppBarMenuItem>
