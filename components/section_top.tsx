@@ -2,6 +2,7 @@ import React from "react";
 import AppBar from "./aq_components/app_bar";
 import AppBarMenuItem from "./aq_components/app_bar_menu_item";
 import SmallVerticalDivider from "./aq_components/divider_vertical_small";
+import ContactMeButton from "./button_contact_me";
 
 export default function TopSection(){
     return (
@@ -12,7 +13,7 @@ export default function TopSection(){
                 <AppBarMenuItem><a>Projects</a></AppBarMenuItem>
                 <AppBarMenuItem><a>Presentations</a></AppBarMenuItem>
                 <SmallVerticalDivider />
-                <AppBarMenuItem><a>Download CV</a></AppBarMenuItem>
+                <AppBarMenuItem><a href="files/CV - v1.pdf" download><img className="inline w-6 mr-1 pb-1" src="icons/file_blank_outline.svg" />Download CV</a></AppBarMenuItem>
             </>} />
             <div className="flex flex-col lg:flex-row lg:space-x-32 xl:space-x-64 mt-16 lg:mt-24 mb-24">
                 <div className="flex flex-col self-center">
@@ -26,7 +27,7 @@ export default function TopSection(){
                             </svg>Iran, Bushehr, Bushehr
                         </div>
                     <p className="text-xl xl:text-2xl leading-9 xl:leading-10 w-128 lg:px-0">I'm a 20 year old Software Engneering Student from Iran Spacilazing in Mobile App Development &amp; Software Solution Design.</p>
-                    <button className="bg-q-purple shadow-md rounded-md text-white px-8 py-3 text-lg font-bold mt-4 self-center lg:self-start hover:shadow-lg hover:bg-opacity-85">Contact Me</button>
+                    <ContactMeButton />
                 </div>
             </div>
         </section>

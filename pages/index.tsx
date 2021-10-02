@@ -3,6 +3,7 @@ import ApplicationCard from '../components/card_application';
 import SkillBar from '../components/bar_skill';
 import TopSection from '../components/section_top';
 import PackageCard from '../components/card_package';
+import ContactMeButton from '../components/button_contact_me';
 
 export default function Home() {
 
@@ -82,7 +83,7 @@ export default function Home() {
         <div className="mx-16 mt-8">
           <h5 className="text-q-purple-light font-bold text-2xl text-left">Ali Qanbari</h5>
           <p className="text-white opacity-80 text-left">This is Ali Qanbari’s Personal Website</p>
-          <button className="bg-q-purple shadow-md rounded-md text-white px-8 py-3 text-lg font-bold mt-8 self-center lg:self-start hover:shadow-lg hover:bg-opacity-85">Contact Me</button>
+          <ContactMeButton />
         </div>
         <div className="mx-16 mt-8">
           <h5 className="text-q-purple-light text-2xl text-left">Applications</h5>
