@@ -18,8 +18,10 @@ module.exports = {
         'q-purple-light' : '#BEBCF8',
        }),
       width: {
-        '128': '32rem',
         '88': '22rem',
+        '128': '32rem',
+        '160': '40rem',
+        '192': '48rem',
       },
     },
   },
