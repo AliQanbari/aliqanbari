@@ -23,7 +23,7 @@ export default function Footer({applications, playgrounds, accounts} : FooterPro
                         </div>
                         <div className="mx-16 mt-8">
                             <h5 className="text-q-purple-light text-2xl text-left">Applications</h5>
-                            {applications.map(app => <p className="text-q-pink opacity-60 hover:opacity-100 text-left my-1">{app.title}</p>)}
+                            {applications.map(app => <a href={app.link}><p className="text-q-pink opacity-60 hover:opacity-100 text-left my-1">{app.title}</p></a>)}
                         </div>
                         <div className="mx-16 mt-8">
                             <h5 className="text-q-purple-light text-2xl text-left">Playgrounds</h5>

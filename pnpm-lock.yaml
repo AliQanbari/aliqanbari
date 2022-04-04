@@ -11,6 +11,7 @@ specifiers:
   react: ^17.0.2
   react-dom: ^17.0.2
   react-responsive-carousel: ^3.2.23
+  react-viewer: ^3.2.2
   tailwindcss: ^2.1.4
   typescript: 4.3.2
 
@@ -22,6 +23,7 @@ dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-responsive-carousel: 3.2.23
+  react-viewer: 3.2.2
   tailwindcss: 2.2.7_7b69a43ec4689fa7484dee35f79a7806
 
 devDependencies:
@@ -2719,6 +2721,12 @@ packages:
       classnames: 2.2.6
       prop-types: 15.7.2
       react-easy-swipe: 0.0.21
+    dev: false
+
+  /react-viewer/3.2.2:
+    resolution: {integrity: sha512-DHOq1x6cXsAViY43204ILRzLVR5ovP1MgzsC+LzZCWlInRuHjzAgpQZ8GzWm1CkiNYuHGwCxH36X0JUHl2xDSg==}
+    dependencies:
+      classnames: 2.2.6
     dev: false
 
   /react/17.0.2:

@@ -24,6 +24,15 @@ module.exports = {
         '192': '48rem',
       },
     },
+    container: {
+      padding: {
+        DEFAULT: '0.5rem',
+        sm: '2rem',
+        lg: '6rem',
+        xl: '8rem',
+        '2xl': '10rem',
+      },
+    },
   },
   variants: {
     extend: {

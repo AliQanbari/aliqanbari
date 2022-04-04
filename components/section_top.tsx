@@ -11,10 +11,10 @@ export default function TopSection(){
         <section title="about me" className="container mx-auto py-8">
             <AppBar title={'Ali Qanbari'} menuColor="#2E3A59" actions={<>
                 <AppBarMenuItem><a href="https://medium.com/@ali.gh2236">Blog</a></AppBarMenuItem>
-                <AppBarMenuItem><a>Projects</a></AppBarMenuItem>
-                <AppBarMenuItem><a>Presentations</a></AppBarMenuItem>
+                {/* <AppBarMenuItem><a>Projects</a></AppBarMenuItem>
+                <AppBarMenuItem><a>Presentations</a></AppBarMenuItem> */}
                 <SmallVerticalDivider />
-                <AppBarMenuItem><a href="files/CV - v1.pdf" download><img className="inline w-6 mr-1 pb-1" src="icons/file_blank_outline.svg" />Download CV</a></AppBarMenuItem>
+                <AppBarMenuItem><a href="files/flutter-resume.pdf" download><img className="inline w-6 mr-1 pb-1" src="icons/file_blank_outline.svg" />Download Resume</a></AppBarMenuItem>
             </>} />
             <div className="flex flex-col lg:flex-row lg:space-x-32 xl:space-x-64 mt-16 lg:mt-24 mb-24">
                 <div className="flex flex-col self-center">

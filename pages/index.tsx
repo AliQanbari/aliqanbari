@@ -2,16 +2,11 @@ import React from 'react';
 import TopSection from '../components/section_top';
 import SkillsSection from '../components/section_skills';
 import ApplicationsSection from '../components/section_applications';
-import PackagesSection from '../components/section_packages';
 import Footer from '../components/footer';
+import StudentProjectsSection from '../components/section_stprojects';
+import { applications } from '../lib/Application';
 
 export default function Home() {
-
-  const applications = [
-    { title: "Tile Tap", description: "5 different fun Games about tapping Tiles" },
-    { title: "Prayer Times", description: "An Islamic calendar that can show you exact prayer times and play adhan" },
-    { title: "Meme Box", description: "A Cross-Platform Meme Making Toolbox that includes meme templates and an image editor" },
-  ];
 
   const playgrounds = [
     { title: 'OS Solver', link: 'https://os.aligator.ir' },
@@ -33,7 +28,8 @@ export default function Home() {
     <TopSection />
     <SkillsSection />
     <ApplicationsSection applications={applications} />
-    <PackagesSection packages={packages} />
+    {/* <PackagesSection packages={packages} /> */}
+    <StudentProjectsSection />
     <Footer {...{applications, playgrounds, accounts}} />
   </>;
 }
