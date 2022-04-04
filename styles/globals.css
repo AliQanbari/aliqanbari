@@ -19,3 +19,7 @@
 body {
     font-family: 'ProductSans';
 }
+
+.carousel.carousel-slider {
+    margin: auto !important;
+}

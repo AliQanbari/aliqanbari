@@ -5,12 +5,12 @@ import SmallVerticalDivider from "./aq_components/divider_vertical_small";
 import ContactMeButton from "./button_contact_me";
 
 export default function TopSection(){
-    const aboutText = "I'm a 20 year old Software Engneering Student from Iran Spacilazing in Mobile App Development & Software Solution Design.";
+    const aboutText = "I'm a 21 year old Software Engneering Student from Iran Spacilazing in Mobile App Development & Software Solution Design.";
     return (
         <div className="bg-q-pink">
         <section title="about me" className="container mx-auto py-8">
             <AppBar title={'Ali Qanbari'} menuColor="#2E3A59" actions={<>
-                <AppBarMenuItem><a>Blog</a></AppBarMenuItem>
+                <AppBarMenuItem><a href="https://medium.com/@ali.gh2236">Blog</a></AppBarMenuItem>
                 <AppBarMenuItem><a>Projects</a></AppBarMenuItem>
                 <AppBarMenuItem><a>Presentations</a></AppBarMenuItem>
                 <SmallVerticalDivider />
