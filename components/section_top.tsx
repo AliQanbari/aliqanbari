@@ -4,8 +4,12 @@ import AppBarMenuItem from "./aq_components/app_bar_menu_item";
 import SmallVerticalDivider from "./aq_components/divider_vertical_small";
 import ContactMeButton from "./button_contact_me";
 
+const birthday = new Date(2000,9,16);
+
 export default function TopSection(){
-    const aboutText = "I'm a 21 year old Software Engneering Student from Iran Spacilazing in Mobile App Development & Software Solution Design.";
+    const milliesPassed = Date.now() - birthday.getTime();
+    const birthdayDiff = new Date(milliesPassed);
+    const aboutText = `I'm a ${birthdayDiff.getUTCFullYear() - 1970} year old Software Engneering Student from Iran Spacilazing in Mobile App Development & Software Solution Design.`;
     return (
         <div className="bg-q-pink">
         <section title="about me" className="container mx-auto py-8">

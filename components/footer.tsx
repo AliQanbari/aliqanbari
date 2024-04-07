@@ -34,7 +34,7 @@ export default function Footer({applications, playgrounds, accounts} : FooterPro
                             {accounts.map(ply => <a href={ply.link}><p className="my-2 text-q-pink opacity-60 hover:opacity-100 text-left"><img className="inline mr-2 pb-1" src={ply.icon} />{ply.title}</p></a>)}
                         </div>
                     </div>
-                    <p className="text-center text-q-purple-muted mt-16">Copyright © 2021 <a className="hover:text-q-purple-light" href="https://aligator.ir">Aligator.ir</a>, Inc. All rights reserved.</p>
+                    <p className="text-center text-q-purple-muted mt-16">Copyright © {new Date().getUTCFullYear()} <a className="hover:text-q-purple-light" href="https://aligator.ir">Aligator.ir</a>, Inc. All rights reserved.</p>
                 </div>
             </div>
         </footer>

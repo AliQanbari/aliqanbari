@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 import Application from "../lib/Application";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 type ApplicationsSectionProps = {
   applications: Application[]
@@ -16,9 +17,9 @@ export default function ApplicationsSection({ applications }: ApplicationsSectio
           <h2 className="text-4xl font-bold text-center text-white mb-8">My Apps</h2>
           <div className="flex flex-wrap justify-center">
             <div>
-              <Carousel infiniteLoop={true} showIndicators={false} showStatus={false} showThumbs={false} onClickItem={(i)=>{window.open(pa[i].link);}}>
+              { <Carousel infiniteLoop={true} showIndicators={false} showStatus={false} showThumbs={false} onClickItem={(i)=>{window.open(pa[i].link);}}>
                 {pa.map((a)=> <img className="rounded-md lg:rounded-2xl" src={a.poster} />)}
-              </Carousel>
+              </Carousel>}
             </div>
           </div>
         </div>
